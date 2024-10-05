@@ -19,18 +19,45 @@ wrapper
 }
 
 /*************************************
-side-bar
+side-bar ※room room-aのところがカリキュラムと不一致
 *************************************/
 
 .side-bar_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 100px;
   padding: 0 20px;
+}
+
+.user-name a {
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.create-room a {
+  font-size: 10px;
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
 }
 
 .rooms {
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
   background-color: #2F3E51;
+}
+
+.room {
+  padding: 20px 0 40px;
+}
+
+.room a {
+  color: white;
+  text-decoration: none;
 }
 
 /*************************************
