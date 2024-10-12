@@ -7,22 +7,7 @@
 </div>
 <!--messages-->
 <div class="messages">
-  <!--message-->
-  <div class="message">
-    <div class="message-header">
-      <div class="message_user">Tom</div>
-      <div class="message_date">2021/5/10(Tue) 12:43:30</div>
-    </div>
-    <div class="message-content">おはよう</div>
-  </div>
-  <!--message-->
-  <div class="message">
-    <div class="message-header">
-      <div class="message_user">Tom</div>
-      <div class="message_date">2021/5/11(Wed) 22:43:36</div>
-    </div>
-    <div class="message-content">こんばんは</div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 <!--message-box-->
 <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f| %>
