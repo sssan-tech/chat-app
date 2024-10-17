@@ -1,0 +1,15 @@
+
+[1mFrom:[0m /home/eses/tech_camp/projects/chat-app/spec/models/message_spec.rb:26 :
+
+    [1;34m21[0m:     [32mend[0m
+    [1;34m22[0m:     context [31m[1;31m'[0m[31mメッセージが投稿できない場合[1;31m'[0m[31m[0m [32mdo[0m
+    [1;34m23[0m:       it [31m[1;31m'[0m[31mcontentとimageが空では保存できない[1;31m'[0m[31m[0m [32mdo[0m
+    [1;34m24[0m:         @message.content = [31m[1;31m"[0m[31m[1;31m"[0m[31m[0m
+    [1;34m25[0m:         @message.image = [1;36mnil[0m
+ => [1;34m26[0m:         binding.pry
+    [1;34m27[0m:         expect(@message.erorrs.full_messages).to include()
+    [1;34m28[0m:       [32mend[0m
+    [1;34m29[0m:       it [31m[1;31m'[0m[31mroomが紐付いていないと保存できない[1;31m'[0m[31m[0m [32mdo[0m
+    [1;34m30[0m: 
+    [1;34m31[0m:       [32mend[0m
+
